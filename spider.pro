@@ -11,10 +11,10 @@ CONFIG -= debug_and_release debug_and_release target
 
 SOURCES += \
     main.cpp \
-    widget.cpp
+    spider.cpp
 
 HEADERS += \
-    widget.h
+    spider.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

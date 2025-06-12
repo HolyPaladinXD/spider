@@ -1,4 +1,4 @@
-#include "widget.h"
+#include "spider.h"
 
 #include <QApplication>
 
