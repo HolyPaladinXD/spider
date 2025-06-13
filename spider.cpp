@@ -10,8 +10,13 @@ Widget::Widget(QWidget *parent): QWidget(parent){
     this->setWindowTitle(QStringLiteral("Паук"));
 
     //QIcon icon = this->windowIcon();
+    QPalette pal;
+    pal.setColor(QPalette::ColorGroup::Active, QPalette::ColorRole::Window, QColor(255,255,255, 60));
+    pal.setColor(QPalette::ColorGroup::Inactive, QPalette::ColorRole::Window, QColor(0,0,0, 60));
+    this->setPalette(pal);
 
-    qDebug() << this->windowIcon();
+
+    //qDebug() << this->palette();
 }
 
 Widget::~Widget() {}
