@@ -2,6 +2,7 @@
 #define WIDGET_H
 
 #include <QWidget>
+//TEST STRING TO CHECK WORK AT SECOND COMPUTER WITH GITHUB
 
 class Widget : public QWidget
 {
