@@ -11,9 +11,11 @@ Widget::Widget(QWidget *parent): QWidget(parent){
 
     //QIcon icon = this->windowIcon();
     QPalette pal;
-    pal.setColor(QPalette::ColorGroup::Active, QPalette::ColorRole::Window, QColor(255,255,255, 60));
-    pal.setColor(QPalette::ColorGroup::Inactive, QPalette::ColorRole::Window, QColor(0,0,0, 60));
+    pal.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::Window, QBrush(QColor(48,172,220,120),Qt::SolidPattern));
+    pal.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::Window, QBrush(QPixmap("D:/Qt_projects/spider/images/Water lilies.jpg")));
     this->setPalette(pal);
+    this->setWindowOpacity(0.60);
+
 
 
     //qDebug() << this->palette();
