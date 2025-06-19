@@ -45,8 +45,11 @@ Widget::Widget(QWidget *parent): QWidget(parent){
     //setMinimumSize(640,480);
     this->setFixedSize(QPixmap("D:/Qt_projects/spider/images/Water lilies.jpg").size());
     this->move(sz.center());
-    this->setCursor(Qt::BusyCursor);
-    //this->setMinimumSize();
+    //this->setCursor(Qt::BusyCursor);
+    QPixmap pix("D:/Qt_projects/spider/images/spider1.bmp");
+    pix.setMask(QBitmap::fromPixmap(pix));
+    this->setCursor(QCursor(pix));
+
 
 
 
