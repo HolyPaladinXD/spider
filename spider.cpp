@@ -11,8 +11,11 @@ Widget::Widget(QWidget *parent): QWidget(parent){
 
     //QIcon icon = this->windowIcon();
     QPalette pal;
-    pal.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::Window, QBrush(QColor(48,172,220,120),Qt::SolidPattern));
-    pal.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::Window, QBrush(QPixmap("D:/Qt_projects/spider/images/Water lilies.jpg")));
+    //pal.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::Window, QBrush(QColor(48,172,220,120),Qt::SolidPattern));
+    //pal.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::Window, QBrush(QPixmap("D:/Qt_projects/spider/images/Water lilies.jpg")));
+    pal.setBrush(QPalette::ColorGroup::Active, QPalette::ColorRole::Window, QBrush(QColorDialog::getColor()));
+    //pal.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::Window, QBrush(QColorDialog::getColor()));
+    pal.setBrush(QPalette::ColorGroup::Inactive, QPalette::ColorRole::Window, QBrush(QPixmap(QFileDialog::getOpenFileName())));
     this->setPalette(pal);
     this->setWindowOpacity(1);
 

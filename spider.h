@@ -1,5 +1,7 @@
 #ifndef WIDGET_H
 #define WIDGET_H
+#include <QColorDialog>
+#include <QFileDialog>
 
 #include <QWidget>
 #include <QGuiApplication>
