@@ -7,7 +7,7 @@ Widget::Widget(QWidget *parent): QWidget(parent){
 
     this->setWindowState(Qt::WindowActive);
 
-    this->setWindowTitle(QStringLiteral("Паук"));
+    this->setWindowTitle(QString(QObject::tr("Spider")));
 
     //QIcon icon = this->windowIcon();
     QPalette pal;
